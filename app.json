@@ -2,6 +2,7 @@
   "expo": {
     "name": "checkin",
     "slug": "checkin",
+    "scheme": "checkin",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -25,6 +26,15 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins":
+    [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow ChekIn to use your location."
+        }
+      ]
+    ]
   }
 }
