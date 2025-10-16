@@ -10,10 +10,10 @@ import {
   View,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { signUp } from "../src/services/authUser";
-import CustomAlert from "../src/components/CustomAlert";
-import { showAlert } from "../src/lib/ui/alert";
-import { isValidEmail } from "../src/utils/validators";
+import { signUp } from "@/src/services/authUser";
+import CustomAlert from "@/src/components/CustomAlert";
+import { showAlert } from "@/src/lib/ui/alert";
+import { isValidEmail } from "@/src/utils/validators";
 
 export default function Register() {
   const [name, setName] = useState<string>("");

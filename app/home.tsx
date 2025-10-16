@@ -15,11 +15,11 @@ import * as Location from "expo-location";
 import { Ionicons } from "@expo/vector-icons";
 import FontAwesome6 from "@expo/vector-icons/FontAwesome6";
 
-import { getCheckins, registerCheckin } from "../src/services/checkins";
-import CustomAlert from "../src/components/CustomAlert";
-import { Checkin } from "../src/types";
-import { showAlert } from "../src/lib/ui/alert";
-import { formatDate } from "../src/utils/formatters";
+import { getCheckins, registerCheckin } from "@/src/services/checkins";
+import CustomAlert from "@/src/components/CustomAlert";
+import { Checkin } from "@/src/types";
+import { showAlert } from "@/src/lib/ui/alert";
+import { formatDate } from "@/src/utils/formatters";
 
 export default function Home() {
   const { name, id } = useLocalSearchParams();
